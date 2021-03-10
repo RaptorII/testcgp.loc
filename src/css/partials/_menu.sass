@@ -1,0 +1,120 @@
+.nav
+  display: flex
+  align-items: center
+  justify-content: start
+
+.menu
+  display: flex
+  .navigation
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    align-items: center
+    align-content: center
+    margin-left: 25px
+    li
+      padding: 0 22px
+      letter-spacing: 0
+      color: $color-dark
+      font-family: $font-PN
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      display: flex
+      align-items: center
+      text-align: center
+      a
+        text-decoration: none
+        color: $color-grey1
+        transition: $trans-main
+        &:hover
+          color: $color-dark
+        &.active
+          font-weight: 600
+          color: $color-dark
+    .navigation__drop
+      &:hover, &:focus
+        span
+          &:after
+            content: ""
+            transition: $trans-main
+            position: absolute
+            bottom: 2px
+            height: 2px
+            width: 100%
+            left: 0
+            background: $color-grey-l
+
+    &__drop
+      position: relative
+      &:before
+        content: ""
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 5px 5px 0 5px
+        border-color: $color-grey1 transparent transparent transparent
+        position: absolute
+        top: 50%
+        right: 5%
+
+      .drop
+        position: absolute
+        width: 240px
+        background: $color-grey1
+        top: 70px
+        pointer-events: none
+        opacity: 0
+        transition: $trans-main
+        list-style: none
+        padding-left: 25px
+        padding-right: 25px
+        padding-bottom: 15px
+        z-index: -1
+        &:after
+          content: ""
+          height: 20px
+          width: 100%
+          position: absolute
+          top: -20px
+          left: 0
+
+        li
+          flex: 1 0 100%
+          line-height: 100%
+          text-align: left
+        a
+          color: $color-white
+          padding: 15px 0
+
+      &:hover
+        .drop
+          top: 20px
+          opacity: 1
+          pointer-events: all
+          transition: $trans-main
+          z-index: 1
+
+.user-menu
+  display: flex
+  align-items: center
+  cursor: pointer
+  &__item
+    font-size: 16px
+    font-family: $font-PN
+    font-weight: 600
+    padding: 0 30px
+
+@media screen and (min-width: 320px)
+  .user-menu
+    margin-right: 65px
+
+@media screen and (min-width: 640px)
+  .user-menu
+    margin-right: 120px
+
+@media screen and (min-width: 1024px)
+  .user-menu
+    margin-right: unset

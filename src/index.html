@@ -1,90 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gulp with TailwindCSS</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <title>Test fo CGP</title>
 </head>
-<body class="bg-gray-200">
-    <header class="p-20 bg-gradient-to-r from-red-400 via-red-500 to-pink-500 text-center">
-        <h1 class="hero-heading">Gulp with TailwindCSS Kit</h1>
-        <p class="w-full text-center text-white text-xl leading-5 mb-10">Updated with Tailwind 2.0, PostCss 8.0+</p>
-        <div class="py-15 flex justify-center space-x-6">
-            <a class="github-button" href="https://github.com/manjumjn" data-show-count="true" aria-label="Follow @manjumjn on GitHub">Follow @manjumjn</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss" data-icon="octicon-star" data-show-count="true" aria-label="Star manjumjn/gulp-with-tailwindcss on GitHub">Star</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork manjumjn/gulp-with-tailwindcss on GitHub">Fork</a>
-            <a class="github-button" href="https://github.com/manjumjn/gulp-with-tailwindcss/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download manjumjn/gulp-with-tailwindcss on GitHub">Download</a>
-        </div>
-    </header>
-    <div class="mx-auto py-20 max-w-2xl">
-        <img class="shadow transition-shadow duration-500 rounded hover:shadow-lg mb-10" src="img/cover.jpg" alt="Gulp with TailwindCSS">
-        <div class="instructions">
-            <div class="mb-20 text-gray-700">
-                <h4 class="sub-title">Usage</h4>
-                <p>Use the following commands to get started.</p>
-                <code class="code">
-                    <em>// To Install Dev Depedencies</em><br/>
-                    npm install<br/><br/>
-
-                    <em>// To start development and server for live preview</em><br/>
-                    npm run dev<br/><br/>
-
-                    <em>// To generate minifed,optamized files for production server</em><br/>
-                    npm run prod
-                </code>
+<body>
+<div class="wrapper overflow">
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/speakClouds.svg" alt="...">
+                </a>
             </div>
-
-            <div class="mb-10 text-gray-600">
-                    <h4 class="sub-title">Options</h4>
-                    <p>To change the path of files and destination/build folder configure at <b class="font-bold">config.js</b> file</p>
-                    <!-- Ignore the messay code :P only for demo -->
-<code class="code pre">config: {
-    ...
-    port: 9050 <em>//Update port here</em>
-},
-paths: {
-    root: "./",
-    src: {
-        base: "./src",
-        css: "./src/css",
-        js: "./src/js",
-        img: "./src/img"
-    },
-    dist: {
-        base: "./dist",
-        css: "./dist/css",
-        js: "./dist/js",
-        img: "./dist/img"
-    },
-    build: {
-        base: "./build",
-        css: "./build/css",
-        js: "./build/js",
-        img: "./build/img"
-    }
-}
-</code>
+            <div class="menu">
+                <div class="toggle-nav__bubble">
+                    <div id="toggle-nav" class="toggle-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-
-        </div>
-
-        <div class="social">
-            <p class="w-full text-center">Want to connect with me?</p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://manjumjn.com">Website</a>
-                <a href="https://www.facebook.com/manjumjn">Facebook</a>
-                <a href="https://twitter.com/manju_mjn">Twitter</a>
-                <a href="mailto:manjumjng2@gmail.com">Email Me</a>
+                <div class="navigation__wrapper">
+                    <ul class="navigation">
+                        <li class="navigation__drop">
+                            Features
+                            <ul class="drop">
+                                <li><a href="">Features 1</a></li>
+                                <li><a href="">Features 2</a></li>
+                                <li><a href="">Features 3</a></li>
+                                <li><a href="">Features 4</a></li>
+                                <li><a href="">Features 5</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="user-menu">
+            <div id="myBtn" class="user-menu__item clr-grey1">
+                Login
+            </div>
+            <button class="btn tr rounded-btn clr-blue-bg clr-white border-0 py-4 px-5 font-bold">
+                Start Free Trial
+            </button>
         </div>
     </div>
 
-    <script src="./js/scripts.js"></script>
+    <div class="first py-12 max-w-3xl mx-auto">
+        <h1 class="clr-dark font-bold text-6xl text-center leading-normal">
+            Welcome to your <br> personal SMS Dashboard
+        </h1>
+        <p class="clr-grey2 text-base text-center  mx-auto">
+            Tempor minim anim eiusmod occaecat eu. In
+            labore veniam incididunt mollit commodo
+            nostrud non ex occaecat occaecat deserunt magna quis veniam.
+        </p>
+        <div class="flex items-center justify-center my-9">
+            <button class="flex btn tr rounded-btn clr-blue-bg clr-white border-0 py-4 px-5 font-bold mx-2">
+                Start Free Trial
+            </button>
+            <button class="flex btn ds rounded-btn clr-white-bg clr-blue border-0 py-4 px-5 font-bold mx-2">
+                Discover
+            </button>
 
-    <!-- Demo Purpose -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+        </div>
+    </div>
+</div>
+<div class="second">
+    <div class="box-wrap lg:my-36 md:my-44 sm:my-48 my-48">
+        <div class="box left">
+            <div class="box__img">
+                <img src="img/man1.png" alt="...">
+            </div>
+            <div class="box__text">
+                <p>
+                    Eiusmod irure ullamco eiusmod mollit ex qui.
+                    Mollit veniam tempor amet veniam eiusmod aute.
+                    Proident minim ad exercitation qui...
+                </p>
+            </div>
+            <div class="dots"></div>
+            <div class="ball green"></div>
+        </div>
+        <div class="box right">
+            <div class="box__img">
+                <img src="img/man2.png" alt="...">
+            </div>
+            <div class="box__text">
+                <p>
+                    Eiusmod irure ullamco eiusmod mollit ex qui.
+                    Mollit veniam tempor amet veniam eiusmod aute.
+                    Proident minim ad exercitation qui...
+                </p>
+            </div>
+            <div class="dots"></div>
+            <div class="ball grey"></div>
+        </div>
+
+    </div>
+
+    <div class="md:flex justify-start max-w-4xl mx-auto">
+        <div class="flex-1 p-3">
+            <p class="font-bold clr-dark text-2xl">
+                Nisi ad voluptate laboris dolor deserunt adipisicing ea amet mollit
+                commodo voluptate aute adipisicing. Anim minim do exercitation id.
+            </p>
+        </div>
+        <div class="flex-1 p-3">
+            <ul class="ul-green">
+                <li>
+                    Nisi ad voluptate laboris dolor deserunt adipisicing ea amet mollit commodo voluptate aute adipisicing.
+                </li>
+                <li>
+                    Nisi ad voluptate laboris dolor deserunt adipisicing.
+                </li>
+                <li>
+                    Nisi ad voluptate laboris dolor deserunt adipisicing.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="trial" class="trial">
+    <div class="wrapper ">
+        <div class="md:flex">
+            <div class="flex-1 ico__box pt-10 mr-10">
+                <div class="ico__box--icon">
+                    <img src="/img/man.svg" alt="...">
+                </div>
+                <div class="ico__box--head">
+                    Set up FREE Trial Account
+                </div>
+                <div class="ico__box--text">
+                    Duis pariatur ullamco Lorem magna duis Lorem. Nisi
+                    quis sit Lorem cupidatat eiusmod ad et anim commodo
+                    dolor id voluptate cupidatat. Dolore ut excepteur
+                    enim tempor.
+                </div>
+            </div>
+
+            <div class="flex-1 form p-10 md:ml-28 md:ml-8">
+                <form class="mail-form ">
+                    <div class="form__control">
+                        <label for="email">Your Email</label>
+                        <input type="text" id="email" placeholder="Write here your email address" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form__control">
+                        <label for="email">Your Phone number</label>
+                        <input type="text" id="phone" placeholder="Write here your phone number" />
+                        <small>Error message</small>
+                    </div>
+                    <button class="flex btn rounded-btn clr-blue-bg clr-white border-0 py-4 px-5 font-bold mx-2">
+                        Start Free Trial
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="md:flex my-20">
+        <div class="flex-1">
+            <div class="people__box p-6 ml-10 md:mr-28 mr-8">
+                <div class="people__box--item my-5 p-4">
+                    <div class="people__box--ico">
+                        <img src="img/woman1.png" alt="...">
+                    </div>
+                    <div class="people__box--text">
+                        <div class="people__box--head">
+                            Brandie Warren
+                        </div>
+                        <p>
+                            Sunt mollit dolor sunt non cillum pari...
+                        </p>
+                    </div>
+                </div>
+                <div class="people__box--item my-5 p-4">
+                    <div class="people__box--ico">
+                        <img src="img/man3.png" alt="...">
+                    </div>
+                    <div class="people__box--text">
+                        <div class="people__box--head">
+                            Wade Wilson
+                        </div>
+                        <p>
+                            Sunt mollit dolor sunt non cillum pari...
+                        </p>
+                    </div>
+                </div>
+                <div class="flex my-5">
+                    <button class="flex btn rounded-btn clr-green-bg clr-white border-0 py-4 px-5 font-bold mx-2">
+                        Create New Message
+                    </button>
+                    <button class="flex btn rounded-btn clr-grey-l-bg clr-white border-0 py-4 px-5 font-bold mx-2">
+                        Archive
+                    </button>
+                </div>
+            </div>
+            <div class="grafics two">
+                <div class="dots "></div>
+                <div class="ball grey "></div>
+                <div class="ball green "></div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="ico__box ml-12 mt-20">
+                <div class="ico__box--icon">
+                    <img src="/img/phoneSms.svg" alt="...">
+                </div>
+                <div class="ico__box--head">
+                    Outbound SMS
+                </div>
+                <div class="ico__box--text">
+                    Create and store templates for messages you send on a regular basis.
+                    Duis pariatur ullamco Lorem magna duis Lorem.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="discover" class="wrapper">
+    <div class="md:flex md:mt-36 mt-10">
+        <div class="flex-1">
+            <div class="ico__box mt-9">
+                <div class="ico__box--icon">
+                    <img src="/img/sms.svg" alt="...">
+                </div>
+                <div class="ico__box--head">
+                    Send SMS
+                </div>
+                <div class="ico__box--text">
+                    Send the same message to multiple recipients in one scheduled event. If you want to send multiple
+                    messages to multiple recepients in one event, please use the bulk upload option in the main menu.
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="people__box p-6 md:ml-28 ml-10 mr-10">
+                <div class="people__box--item p-2">
+                    <div class="flex items-center justify-center">
+                        <div class="people__box--ico">
+                            <img src="img/man4.png" alt="...">
+                        </div>
+                        <div class="people__box--head ">
+                            Ronald Simmmons
+                        </div>
+                        <button class="flex btn rounded-btn clr-grey-l-bg clr-white border-0 py-3 px-4 font-bold mx-2">
+                            Select
+                        </button>
+                        <div class="people__box--ico">
+                            <img src="img/telegram.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="people__box--item my-5 p-3">
+                    <div class="people__box--text">
+                        <p>
+                            Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna
+                            pariatur ad reprehenderit laborum veniam consequat.
+                        </p>
+                    </div>
+                </div>
+                <div class="people__box--item my-5 p-3">
+                    <div class="people__box--text">
+                        <p>
+                            Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna
+                            pariatur ad reprehenderit laborum veniam consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grafics three">
+                <div class="dots "></div>
+                <div class="ball grey "></div>
+                <div class="ball green "></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Modal window</h2>
+        </div>
+        <div class="modal-body">
+            <form class="mail-form ">
+                <div class="form__control">
+                    <label for="login-f">Your Login</label>
+                    <input type="text" id="login-f" placeholder="Write here your login" />
+                    <small>Error message</small>
+                </div>
+                <div class="form__control">
+                    <label for="pass">Your password</label>
+                    <input type="text" id="pass" placeholder="Write here your pass" />
+                    <small>Error message</small>
+                </div>
+                <button class="flex btn rounded-btn clr-blue-bg clr-white border-0 py-4 px-5 font-bold mx-2">
+                    Enter
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!---->
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,112 @@
+body
+  max-width: 1440px
+  //overflow: hidden
+  margin: 0 auto
+  background: url("../img/mainBG.png")  50% 0% no-repeat
+  font-family: $font-PN
+
+//colors classes
+.clr-dark
+  color: $color-dark
+.clr-black
+  color: $color-black
+.clr-white
+  color: $color-white
+.clr-grey1
+  color: $color-grey1
+.clr-grey2
+  color: $color-grey2
+.clr-grey-l
+  color: $color-grey-l
+.clr-blue
+  color: $color-blue
+.clr-green
+  color: $color-green
+
+.clr-dark-bg
+  background: $color-dark
+.clr-black-bg
+  background: $color-black
+.clr-white-bg
+  background: $color-white
+.clr-grey1-bg
+  background: $color-grey1
+.clr-grey2-bg
+  background: $color-grey2
+.clr-grey-l-bg
+  background: $color-grey-l
+.clr-blue-bg
+  background: $color-blue
+.clr-green-bg
+  background: $color-green
+
+.rounded-btn
+  border-radius: 50px
+
+.wrapper
+  max-width: 1110px
+  margin: 0 auto
+  &.overflow
+    overflow-y: hidden
+
+.ul-green
+  li
+    position: relative
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 150%
+    padding-left: 30px
+    &:before
+      content: ""
+      display: block
+      background: $color-green
+      position: absolute
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      top: 6px
+      left: 10px
+    + li
+      margin-top: 25px
+
+@media screen and (min-width: 768px)
+  .ul-green
+    li
+      padding-left: unset
+      &:before
+        content: ""
+        left: -20px
+  .trial
+    background: url("../img/bgMid.png")  50% 0% no-repeat
+
+.trial
+  margin: 65px 0px 30px
+
+.ball.green
+  position: absolute
+  width: 221px
+  height: 221px
+  border-radius: 50%
+  left: 52px
+  top: 39px
+  background: rgba(226, 250, 230, 0.5)
+  z-index: -1
+.ball.grey
+  position: absolute
+  width: 151px
+  height: 151px
+  right: -23px
+  top: 65px
+  background: rgba(239, 243, 255, 0.5)
+  border-radius: 50%
+  z-index: -1
+
+.dots
+  position: absolute
+  width: 150px
+  height: 150px
+  background-color: transparent
+  background-image: radial-gradient(circle, #A5A9C0 20%, transparent 10%), radial-gradient(circle, #A5A9C0 20%, transparent 10%)
+  background-size: 8px 8px
+  background-position: 0 0, 0 0
